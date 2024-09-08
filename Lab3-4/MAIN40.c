@@ -1,16 +1,18 @@
 #include <stdio.h>
 int main()
-{ do{
-    int n,sum;
-    printf("Enter number: ");
-    scanf("%d",&n);
-   }   
+{
+    system("cls");
+    int n,sum=0;
+    do 
+    { 
+        printf("Enter a number(positive): ");
+        scanf("%d",&n);
 
-    while(n)
-       { 
-        continue;
-        sum += n;
+        if(n >= 0)
+        { sum += n;}
     }
-    printf("%d",sum);
+    while(n >= 0);
+
+    printf("Sum of the numbers: %d",sum);
 
 }
