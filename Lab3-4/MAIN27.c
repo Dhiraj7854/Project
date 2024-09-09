@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
-    system("cls");
     int a,b,flag = 1;
     printf("Enter your number: ");
     scanf("%d",&a);
