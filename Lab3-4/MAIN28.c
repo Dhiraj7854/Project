@@ -1,20 +1,35 @@
 #include <stdio.h>
 int main()
 {
-    int num,sum=0,q,temp;
-    printf("Enter the num: ");
-    scanf("%d",&num);
-    temp = num;
-    while(temp != 0)
+    long int a,b,c,n = 0,result = 0;
+    printf("Enter an integer: ");
+    scanf("%lu",&a);
+
+    b = a;
+
+    while(b != 0)
     {
-        q = temp%10;
-        sum = sum + q*q*q;
-        temp = temp/10;
+       b /= 10;
+       ++n; 
+    }
+    
+    b = a;
+    
+    while( b != 0)
+    {
+        c = b % 10;
+        long int q = 1;
+        for(long int i = 0;i < n;i++)
+        {
+            q *= c;
+        }
+            result += q;
+            b /= 10;
 
     }
-    if (sum == num)
-    {printf("%d is armstrong number.",num);}
 
+    if(result == a)
+    { printf("%lu is Armstrong Number.",a);}
     else
-    { printf("%d is not armstrong number.",num);}
+    { printf("%lu is not Armstrong Number.",a);}
 }
