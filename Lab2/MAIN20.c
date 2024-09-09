@@ -13,20 +13,20 @@ int main()
     switch(op)
     {
         case '+':
-        printf("%f + %f = %f",a,b,a+b);
+        printf("%.2f + %.2f = %.2f",a,b,a+b);
         break;
 
         case '-':
-        printf("%f - %f = %f",a,b,a-b);
+        printf("%.2f - %.2f = %.2f",a,b,a-b);
         break;
 
         case '*':
-        printf("%f * %f = %f",a,b,a*b);
+        printf("%.2f * %.2f = %.2f",a,b,a*b);
         break;
 
         case '/':
         if(b != 0)
-        {printf("%f / %f = %.2f",a,b,a/b);}
+        {printf("%.2f / %.2f = %.2f",a,b,a/b);}
         else
         { printf("Division by 0 Error");}
         break;
