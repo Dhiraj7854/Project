@@ -23,10 +23,14 @@ int main()
         max1 = array[0];
         max2 = array[1];
     }
-    else 
+    else if(array[0]<array[1])
     {
         max1 = array[1];
         max2 = array[0];
+    }
+    else if(array[0]==array[1])
+    {   max1 = array[1];
+        max2 = array[2];
     }
 
     for(int i = 2; i<n; i++)
