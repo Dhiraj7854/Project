@@ -9,7 +9,8 @@ int main()
 {
     char a[200];
     printf("Enter your String: ");
-    gets(a);
+    fgets(a,200,stdin);
+    a[strcspn(a, "\n")] = '\0';
 
     int len = length(a);
     printf("String length is : %d",len);
