@@ -12,7 +12,8 @@ int main() {
     fgets(c,500,stdin);
     c[strcspn(c, "\n")] = '\0';
     for(int i=0; i < strlen(c); i++) {
-        if(c[i] == 'a'||c[i] == 'e' || c[i] == 'i'||c[i] == 'o'||c[i] == 'u') {
+        if(c[i] == 'a'||c[i] == 'e' || c[i] == 'i'||c[i] == 'o'||c[i] == 'u' ||
+           c[i] == 'A'||c[i) == 'E' || c[i] == 'I' || c[i] == 'O' || c[i] == 'U') {
             count++;
         }
     }
