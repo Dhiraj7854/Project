@@ -11,11 +11,12 @@ void sort(int array[],int n)
             {
                 min = j;
             }
+        } 
 
             int x = array[min];
             array[min] = array[i];
             array[i] = x;
-        }
+        
     }
 }    
 
